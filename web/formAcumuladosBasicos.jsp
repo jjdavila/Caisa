@@ -38,7 +38,7 @@
         <template:put name="title" content="Sistema de Planilla Caisa" direct="true"/>
         <template:put name="keywords" content="aplicacion portal struts" direct="true"/>
         <template:put name="description" content="Utilizacion de Templates  en Struts" direct="true"/>
-        <template:put name="contenido" content="/Templates/contenidos/cont_index.jsp"/>
+        <template:put name="contenido" content="/Templates/contenidos/con_acumuladosbasicos.jsp"/>
         <template:put name="pie" content="/Templates/footer.html"/>
         <template:put name="cabeza" content="/Templates/header.jsp"/>
         <template:put name="menu" content="/Templates/menu.jsp"/>
