@@ -41,7 +41,11 @@
         <template:put name="contenido" content="/Templates/contenidos/cont_index.jsp"/>
         <template:put name="pie" content="/Templates/footer.html"/>
         <template:put name="cabeza" content="/Templates/header.jsp"/>
+<<<<<<< HEAD
+        <template:put name="menu" content="/Templates/menu.jsp"/>  
+=======
         <template:put name="menu" content="/Templates/menu.jsp"/>
+>>>>>>> 865872b1c79e1dc7c0ce6fcb8eda4225050201e1
         <template:put name="modal" content="/Templates/modal.jsp"/>
     </template:insert>
             <!-- start: JavaScript-->
