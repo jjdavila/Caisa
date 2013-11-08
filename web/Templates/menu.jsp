@@ -29,7 +29,7 @@
                     <li>
                         <a class="submenu" href="formAcumuladosBasicos.jsp"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Acumulados</span> <span class="label">8</span></a>
                         <a class="submenu" href="formRentaFija.jsp"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Renta Fija</span> <span class="label"></span></a>
-                        <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Catagolos</span> <span class="label">3</span></a>
+                        <a class="submenu" href="form_catalogos_empleados_activos.jsp"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Catagolos</span> <span class="label">3</span></a>
                         <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Eliminar Empleado Censante</span> <span class="label"></span></a>
                         <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Informes</span> <span class="label">3</span></a>
                         <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Lista de Acumulados Basicos</span> <span class="label"></span></a>
