@@ -9,38 +9,38 @@
 					</div>
 					<div class="box-content">
 						
-						<a href="formAcumuladosBasicos.html" class="quick-button-small span1">
+						<a href="formAcumuladosBasicos.jsp" class="quick-button-small span1">
 							<i class="icon-folder-close-alt"></i>
 							<p>Acumulados Basicos</p>
 							<!--<span class="notification blue">7</span>-->
 						</a>
-						<a href="formAcumuladosOtros.html" class="quick-button-small span1">
+						<a href="formAcumuladosOtros.jsp" class="quick-button-small span1">
 							<i class="icon-folder-close-alt"></i>
 							<p>Acumulados Otros</p>
 							
 						</a>
-						<a href="formAcumuladosVacaciones.html" class="quick-button-small span1">
+						<a href="formAcumuladosVacaciones.jsp" class="quick-button-small span1">
 							<i class="icon-folder-close-alt"></i>
 							<p>Acumulados Vacaciones</p>
 						</a>
-						<a href="formAcumuladosXIIMes.html" class="quick-button-small span1">
+						<a href="formAcumuladosXIIMes.jsp" class="quick-button-small span1">
 							<i class="icon-folder-close-alt"></i>
 							<p>Acumulados XIII Mes</p>
 						</a>
-						<a href="formAcumuladosXperiodos.html" class="quick-button-small span1">
+						<a href="formAcumuladosXperiodos.jsp" class="quick-button-small span1">
 							<i class="icon-folder-close-alt"></i>
 							<p>Acumulados x Periodos</p>
 						</a>
-						<a href="formAcumuladosXmes.html" class="quick-button-small span1">
+						<a href="formAcumuladosXmes.jsp" class="quick-button-small span1">
 							<i class="icon-folder-close-alt"></i>
 							<p>Acumulados por Mes</p>
 							
 						</a>
-						<a href="formAcumuladosOtrasDeducciones.html" class="quick-button-small span1">
+						<a href="formAcumuladosOtrasDeducciones.jsp" class="quick-button-small span1">
 							<i class="icon-folder-close-alt"></i>
 							<p>Acumulados - Otras Deducciones</p>
 						</a>
-						<a href="formAcumuladosAdicionDelSalario.html" class="quick-button-small span1">
+						<a href="formAcumuladosAdicionDelSalario.jsp" class="quick-button-small span1">
 							<i class="icon-folder-close-alt"></i>
 							<p>Adición de Salarios</p>
 						
