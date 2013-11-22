@@ -4,7 +4,7 @@
 
         <div class="box span12">
             <div class="box-header">
-                <h2><i class="icon-edit"></i>Mantenimiento de Empleado</h2>
+                <h2><i class="icon-edit"></i>Mantenimiento de Empleado- Renta fija</h2>
                 <div class="box-icon">
                    
                     <a href="#" class="btn-minimize"><i class="icon-chevron-up"></i></a>

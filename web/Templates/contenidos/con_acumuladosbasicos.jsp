@@ -1,9 +1,8 @@
-			
 <!-- start: Content -->
 
 <div id="content" class="span10">
     <!-- inicio menu de los iconos Acumulados -->
-    <div class="row-fluid">	
+    <div class="row-fluid">        
         <div class="box span12">
             <div class="box-header">
                 <h2><i class="icon-folder-close-alt"></i>Acumulados</h2>
@@ -45,15 +44,15 @@
                     <i class="icon-folder-close-alt"></i>
                     <p>Adicion de Salarios</p>
 
-                </a>						
+                </a>                                                
                 <div class="clearfix"></div>
-            </div>	
+            </div>        
         </div><!--/span-->
     </div> <!--fin de iconos-->
     <div class="row-fluid">
     <div class="box span12">
         <div class="box-header">
-            <h2><i class="icon-edit"></i>Acumulados Básicos</h2>
+            <h2><i class="icon-edit"></i>Acumulados BÃ¡sicos</h2>
             <div class="box-icon">
                 <a href="#" class="btn-minimize"><i class="icon-chevron-up"></i></a>                
             </div>
@@ -68,9 +67,9 @@
                         <div class="row-fluid">            
                             <div class="span6">
                                 <h3>Datos Generales</h3>
-                                <fieldset>	
+                                <fieldset>        
                                     <div class="control-group">
-                                        <label class="control-label" for="numEmpleado">Número de Empleado</label>
+                                        <label class="control-label" for="numEmpleado">NÃºmero de Empleado</label>
                                         <div class="controls">
                                             <input type="text" id="numEmpleado">
                                             <!--<span class="help-inline">Something may have gone wrong</span>-->
@@ -161,9 +160,9 @@
 
                             </div>
                             <div class="span6">
-                                <fieldset>	
+                                <fieldset>        
 
-                                    <h3>Salarios</h3>									
+                                    <h3>Salarios</h3>                                                                        
 
                                     <div class="control-group">
                                         <label class="control-label" for="regularesSalarios">Regulares</label>
@@ -211,7 +210,7 @@
                                             <input type="text" id="horasAusenciasSalarios">
 
                                         </div>
-                                    </div>	
+                                    </div>        
 
                                                  <h3>Vaciones</h3>                                  
 
@@ -237,7 +236,7 @@
                                             <input type="text" id="indemnizaciondev">
 
                                         </div>
-                                    </div>	
+                                    </div>        
 
                                     <div class="control-group">
                                         <label class="control-label" for="preavisodev">Preaviso dev</label>
@@ -262,9 +261,9 @@
 
                                         </div>
                                     </div>         
-		
+                
 
-                                </fieldset>										
+                                </fieldset>                                                                                
 
                               
                             </div>

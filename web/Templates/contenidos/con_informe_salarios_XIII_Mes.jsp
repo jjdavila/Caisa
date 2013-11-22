@@ -5,23 +5,23 @@
     <div class="row-fluid">	
         <div class="box span12">
             <div class="box-header">
-                <h2><i class="icon-folder-close-alt"></i>Catalogos Empleados</h2>
+                <h2><i class="icon-folder-close-alt"></i>Informe de salarios x Empleados</h2>
             </div>
             <div class="box-content">
 
-                <a href="form_catalogos_empleados_activos.jsp" class="quick-button span2">
+                <a href="form_informe_salario_vacaciones.jsp" class="quick-button span2">
                     <i class="icon-folder-close-alt"></i>
-                    <p>Catalogos Empleados activo</p>
+                    <p>Informe de Salarios Vacaciones</p>
                     <!--<span class="notification blue">7</span>-->
                 </a>
-                <a href="form_catalogos_empleados_dtos.jsp" class="quick-button span2">
+                <a href="form_informe_salario_XIII_mes.jsp" class="quick-button span2">
                     <i class="icon-folder-close-alt"></i>
-                    <p>Catalogos empleado x dtos</p>
+                    <p>Informe de Salarios XIII mes</p>
 
                 </a>
-                <a href="form_catalogos_empleados_activos.jsp" class="quick-button span2">
+                <a href="form_informe_salario_x_rata_x_hora.jsp" class="quick-button span2">
                     <i class="icon-folder-close-alt"></i>
-                    <p>Catalogos empleados generales</p>
+                    <p>Informe de Salarios Rata x Hora</p>
                 </a>
 
                 <div class="clearfix"></div>
@@ -34,7 +34,7 @@
 
         <div class="box span12">
             <div class="box-header">
-                <h2><i class="icon-edit"></i>Catalogo de Empleado - Dtos</h2>
+                <h2><i class="icon-edit"></i>Informe de Salarios XIII mes de Empleados</h2>
                 <div class="box-icon">
 
                     <a href="#" class="btn-minimize"><i class="icon-chevron-up"></i></a>
@@ -46,7 +46,7 @@
                 <form class="form-horizontal">
                     <div class="row-fluid">            
                         <div class="span6">
-                            <h3>Este informa brinda al usuario un listado de todos los empleados que estan en el sistema. El mismo aparecera ordenado por el centro de Costo</h3>
+                            <h3>Este informa brinda al usuario un listado de todos los Acumulados del XIII Mes de cada empleado a la fecha.</h3>
                             <fieldset>  
 
                                 <div class="control-group">

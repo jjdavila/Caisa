@@ -6,32 +6,17 @@
     <div class="row-fluid">	
         <div class="box span12">
             <div class="box-header">
-                <h2><i class="icon-folder-close-alt"></i>descuentos - ingresos</h2>
+                <h2><i class="icon-folder-close-alt"></i>Departamentos</h2>
             </div>
             <div class="box-content">
 
                 <a href="form_descuento_ingreso_empleados.jsp" class="quick-button span2">
                     <i class="icon-folder-close-alt"></i>
-                    <p>Descuento - ingreso de empleados</p>
+                    <p>Mantenimiento de departamentos</p>
                     <!--<span class="notification blue">7</span>-->
                 </a>
-                <a href="form_mantenimiento_descuento_ingresos.jsp" class="quick-button span2">
-                    <i class="icon-folder-close-alt"></i>
-                    <p>Maestro Ingresos - Descuentos</p>
-
-                </a>
-                <a href="form_informe_control_de_descuento.jsp" class="quick-button span2">
-                    <i class="icon-folder-close-alt"></i>
-                    <p>Control de Descuentos</p>
-                </a>
-                <a href=".jsp" class="quick-button span2">
-                    <i class="icon-folder-close-alt"></i>
-                    <p>Consultas de Ingresos - descuentos por empleados</p>
-                </a>
-                <a href=".jsp" class="quick-button span2">
-                    <i class="icon-folder-close-alt"></i>
-                    <p>Consulta x mes de descuento -ingreso de empleados</p>
-                </a>						
+              
+             						
                 <div class="clearfix"></div>
             </div>	
         </div><!--/span-->
@@ -39,7 +24,7 @@
     <div class="row-fluid">
     <div class="box span12">
         <div class="box-header">
-            <h2><i class="icon-edit"></i>Mantenimiento Descuento - Ingresos de Empleados</h2>
+            <h2><i class="icon-edit"></i>Mantenimiento</h2>
             <div class="box-icon">
                 <a href="#" class="btn-minimize"><i class="icon-chevron-up"></i></a>                
             </div>
@@ -57,7 +42,7 @@
                                 <fieldset>
                           
                                     
-                                      <div class="control-group">
+                                     <!-- <div class="control-group">
                                             <label class="control-label" for="coddedescuento">Cod. Ingreso / Descuento</label>
                                             <div class="controls">
                                                 <select id="coddedescuento" data-rel="chosen">
@@ -66,17 +51,36 @@
                                                                                                          
                                                 </select>
                                             </div>
-                                        </div>
-                               
+                                        </div>-->
+                                     
+                                                              
                                     <div class="control-group">
-                                        <label class="control-label" for="txtnombreIgreso_descuento">Nombre de Ingresos / Descuentos</label>
+                                        <label class="control-label" for="txtDepartamentos">Departamento</label>
                                         <div class="controls">
-                                            <input type="text" id="txtnombreIgreso_descuento">
-                                            <span class="help-inline">Solo para descuentos</span>
+                                            <input type="text" id="txtDepartamentos">
+                                            <span class="help-inline"></span>
 
                                         </div>
                                     </div>
-                                         <div class="control-group">
+                                     
+                                        <div class="control-group">
+                                        <label class="control-label" for="txtnombredto">Nombre</label>
+                                        <div class="controls">
+                                            <input type="text" id="txtnombredto">
+                                            <span class="help-inline"></span>
+
+                                        </div>
+                                    </div>
+                                     
+                                           <div class="control-group">
+                                        <label class="control-label" for="txtxcoddepeachtree">Codigo de Peachtree</label>
+                                        <div class="controls">
+                                            <input type="text" id="txtxcoddepeachtree">
+                                            <span class="help-inline"></span>
+
+                                        </div>
+                                    </div>
+                                         <!--<div class="control-group">
                                             <label class="control-label" for="txttipo">Tipo o Clase</label>
                                             <div class="controls">
                                                 <select id="txttipo" data-rel="chosen">
@@ -84,23 +88,20 @@
                                                     <option>Descuento</option>
                                                                                                          
                                                 </select>
-                                            </div>
+                                            </div>-->
                                         </div>
+                            
+                    
                                     
-                                         <div class="control-group">
-                                        <label class="control-label" for="txtnumdecta">Numero de Cuenta</label>
-                                        <div class="controls">
-                                            <input type="text" id="txtnumdecta">
-
-                                        </div>
-                                    </div>
+                                     
 
                                 
                                  
                             </div>
+                        </form>
                         
                         </div>
-                          </form>
+                        
 
                 </div>
 
@@ -108,6 +109,6 @@
         </div> 
     </div> 
 </div>
-</div>    
+   
 
 <!-- end: Content -->

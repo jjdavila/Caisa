@@ -20,15 +20,15 @@
                     <p>Maestro Ingresos - Descuentos</p>
 
                 </a>
-                <a href="formAcumuladosVacaciones.jsp" class="quick-button span2">
+                <a href="form_informe_control_de_descuento.jsp" class="quick-button span2">
                     <i class="icon-folder-close-alt"></i>
                     <p>Control de Descuentos</p>
                 </a>
-                <a href="formAcumuladosXIIMes.jsp" class="quick-button span2">
+                <a href=".jsp" class="quick-button span2">
                     <i class="icon-folder-close-alt"></i>
                     <p>Consultas de Ingresos - descuentos por empleados</p>
                 </a>
-                <a href="formAcumuladosXperiodos.jsp" class="quick-button span2">
+                <a href=".jsp" class="quick-button span2">
                     <i class="icon-folder-close-alt"></i>
                     <p>Consulta x mes de descuento -ingreso de empleados</p>
                 </a>						

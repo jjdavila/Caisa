@@ -5,27 +5,36 @@
     <div class="row-fluid">	
         <div class="box span12">
             <div class="box-header">
-                <h2><i class="icon-folder-close-alt"></i>Catalogos Empleados</h2>
+                <h2><i class="icon-folder-close-alt"></i>Descuento / Ingresos x Empleado</h2>
             </div>
+          
             <div class="box-content">
 
-                <a href="form_catalogos_empleados_activos.jsp" class="quick-button span2">
+                <a href="form_descuento_ingreso_empleados.jsp" class="quick-button span2">
                     <i class="icon-folder-close-alt"></i>
-                    <p>Catalogos Empleados activo</p>
+                    <p>Descuento - ingreso de empleados</p>
                     <!--<span class="notification blue">7</span>-->
                 </a>
-                <a href="form_catalogos_empleados_dtos.jsp" class="quick-button span2">
+                <a href="form_mantenimiento_descuento_ingresos.jsp" class="quick-button span2">
                     <i class="icon-folder-close-alt"></i>
-                    <p>Catalogos empleado x dtos</p>
+                    <p>Maestro Ingresos - Descuentos</p>
 
                 </a>
-                <a href="form_catalogos_empleados_activos.jsp" class="quick-button span2">
+                <a href="form_informe_control_de_descuento.jsp" class="quick-button span2">
                     <i class="icon-folder-close-alt"></i>
-                    <p>Catalogos empleados generales</p>
+                    <p>Control de Descuentos</p>
                 </a>
-
+                <a href="#" class="quick-button span2">
+                    <i class="icon-folder-close-alt"></i>
+                    <p>Consultas de Ingresos - descuentos por empleados</p>
+                </a>
+                <a href="#" class="quick-button span2">
+                    <i class="icon-folder-close-alt"></i>
+                    <p>Consulta x mes de descuento -ingreso de empleados</p>
+                </a>						
                 <div class="clearfix"></div>
             </div>	
+       	
         </div><!--/span-->
     </div> <!--fin de iconos-->
 
@@ -34,7 +43,7 @@
 
         <div class="box span12">
             <div class="box-header">
-                <h2><i class="icon-edit"></i>Catalogo de Empleado - Dtos</h2>
+                <h2><i class="icon-edit"></i>Control de Descuento x Empleados</h2>
                 <div class="box-icon">
 
                     <a href="#" class="btn-minimize"><i class="icon-chevron-up"></i></a>
@@ -46,7 +55,7 @@
                 <form class="form-horizontal">
                     <div class="row-fluid">            
                         <div class="span6">
-                            <h3>Este informa brinda al usuario un listado de todos los empleados que estan en el sistema. El mismo aparecera ordenado por el centro de Costo</h3>
+                            <h3>Este informa brinda al usuario un listado de todos los descuentos x empleados.</h3>
                             <fieldset>  
 
                                 <div class="control-group">
