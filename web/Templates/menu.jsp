@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <div id="sidebar-left" class="span2">
 				
 				<div class="row-fluid actions">
@@ -178,94 +177,17 @@
 										</li> 
 								</ul>	
 							</li>
-<!-- 
-
-									<ul>
-										<li><a class="submenu" href="formEmpleados.html" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Datos Generales</span></a></li>
-										<li><a class="dropmenu" href="formAcumulados.html" style="color: #FFFFFF"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> Acumulados</span><span class="label">8</span></a>
-										<ul>
-											<li><a class="submenu" href="formAcumuladosBasicos.html" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Acumulados Basicos</span></a></li>
-											<li><a class="submenu" href="formAcumuladosOtros.html" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Acumulados Otros</span></a></li>
-											<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Acumulados Vacaciones</span></a></li>
-											<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Acumulados XIII Mes</span></a></li>
-											<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Acumulados x Periodos</span></a></li>
-											<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Acumulados x Meses</span></a></li>
-											<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Acumulados Otras Deducciones</span></a></li>
-											<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Adicion del Salarios</span></a></li>												
-									
-										<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Renta Fija</span></a></li>
-										<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Eliminar Empleados Cesantes</span></a></li>
-										<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Catalogo de Empleados - Corto</span></a></li>
-										<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Catalogo de Empleados - Depto</span></a></li>
-										<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Catalogo de Empleados - Alfa</span></a></li>
-										<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Listado de Acumulados Basicos</span></a></li>
-										<li><a class="dropmenu" href="#" style="color: #FFFFFF"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> Informe de Salarios</span></a>
-										<ul>
-											<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Informe de Salario (Vacaciones)</span></a></li>
-											<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Informe de Salario (XIII Mes)</span></a></li>
-											<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Informe de Salario (RxHora)</span></a></li>
-									
-								
-								<li><a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> Descuentos / Ingresos x Empleado</span><span class="label">5</span></a>
-									
-											<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Ingresos / Desctos x Empleado</span></a></li>
-											<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Maestro Ingresos y Descuentos</span></a></li>
-											<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Control de Descuentos</span></a></li>
-											<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Consultas Ing. / Desctos x Empl.</span></a></li>
-											<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Consultas Desctos Mes x Empl.</span></a></li>
-								
-								
-								<li><a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> Deptos y Secciones / Cargos</span><span class="label">7</span></a>
-								
-											<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Departamentos</span></a></li>
-											<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Secciones</span></a></li>
-											<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Cargos u Ocupaciones</span></a></li>
-											<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Catalogo de Departamentos</span></a></li>
-											<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Catalogo de Secciones</span></a></li>
-											<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Lista de Seccion / Cta. Contable</span></a></li>
-											<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Catalogo de Cargos</span></a></li>
-											
-							
-								<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Cuentas Contables / Bancos</span></a></li>
-								<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Jornadas de Trabajo </span></a></li>
-								<li><a class="submenu" href="#" style="color: #FFFFFF"><i class="icon-hdd"></i><span class="hidden-tablet"> Fondo Cesantia</span></a></li>
-											
-								<li>				
-							</ul> -->
-								
-<!-- 							
-						</li>	
-						<li><a href="#"><i class="icon-eye-open"></i><span class="hidden-tablet"> Calculos</span></a></li>
-						<li><a href="#"><i class="icon-dashboard"></i><span class="hidden-tablet"> Informe</span></a></li>
-						<!--<li>
-							<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Personal</span> <span class="label">3</span></a>
-							<ul>
-								<li><a class="submenu" href="infrastructure.html"><i class="icon-hdd"></i><span class="hidden-tablet"> Infrastructure</span></a></li>
-								<li><a class="submenu" href="messages.html"><i class="icon-envelope"></i><span class="hidden-tablet"> Messages</span></a></li>
-								<li><a class="submenu" href="tasks.html"><i class="icon-tasks"></i><span class="hidden-tablet"> Tasks</span></a></li>
-							</ul>	
-						</li>-->
-				<!-- 		<li><a href="#"><i class="icon-group"></i><span class="hidden-tablet"> Personal</span></a></li>
-						<li><a href="#"><i class="icon-list-alt"></i><span class="hidden-tablet"> F. Cesa</span></a></li>
-						<li><a href="#"><i class="icon-lock"></i><span class="hidden-tablet"> Cierre</span></a></li>
-						<li><a href="#"><i class="icon-question-sign"></i><span class="hidden-tablet"> Consulta</span></a></li>
-						<li><a href="#"><i class="icon-align-justify"></i><span class="hidden-tablet"> Salario</span></a></li>
-						<li><a href="#"><i class="icon-bolt"></i><span class="hidden-tablet"> Peligro</span></a></li>
-						<!--<li><a href="file-manager.html"><i class="icon-folder-open"></i><span class="hidden-tablet"> File Manager</span></a></li>
-						<li><a href="icon.html"><i class="icon-star"></i><span class="hidden-tablet"> Icons</span></a></li>
-						<li><a href="login.html"><i class="icon-lock"></i><span class="hidden-tablet"> Login Page</span></a></li>--> --> -->
 					</ul>
 				</div>
 			</div>
-=======
 <!-- start: Main Menu -->
 <div id="sidebar-left" class="span2">
 
-    <div class="row-fluid actions">
+   <!-- <div class="row-fluid actions">
 
         <input type="text" class="search span12" placeholder="...">
 
-    </div>	
+    </div>-->	
 
     <div class="nav-collapse sidebar-nav">
         <ul class="nav nav-tabs nav-stacked main-menu">
@@ -293,7 +215,7 @@
                         <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Eliminar Empleado Censante</span> <span class="label"></span></a>
                         <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Informes</span> <span class="label">3</span></a>
                         <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Lista de Acumulados Basicos</span> <span class="label"></span></a>
-                        <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Descuentos/Ingresos por Empleado</span> <span class="label">5</span></a>
+                        <a class="submenu" href="form_descuento_ingreso_empleados.jsp"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Descuentos/Ingresos por Empleado</span> <span class="label">5</span></a>
 
                     </li> 
                 </ul>	
@@ -434,4 +356,4 @@
     </div>
 </div>
 <!-- end: Main Menu -->
->>>>>>> 865872b1c79e1dc7c0ce6fcb8eda4225050201e1
+
