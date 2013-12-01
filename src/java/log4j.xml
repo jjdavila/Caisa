@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd" >
+<log4j:configuration>
+
+	<appender name="appenderConsola" class="org.apache.log4j.ConsoleAppender">
+		<param name="ImmediateFlush" value="true" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %p %c - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="appenderFatal" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="../log/unix_reporte_fatal.log" />
+		<param name="Append" value="true" />
+		<param name="MaxFileSize" value="4MB" />
+		<param name="MaxBackupIndex" value="4" />
+		<param name="Threshold" value="FATAL" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %p %c - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="appenderError" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="../log/unix_reporte_error.log" />
+		<param name="Append" value="true" />
+		<param name="MaxFileSize" value="4MB" />
+		<param name="MaxBackupIndex" value="4" />
+		<param name="Threshold" value="ERROR" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %p %c - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="appenderDebug" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="../log/unix_reporte_debug.log" />
+		<param name="Append" value="true" />
+		<param name="MaxFileSize" value="4MB" />
+		<param name="MaxBackupIndex" value="4" />
+		<param name="Threshold" value="DEBUG" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %p %c - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="appenderWarn" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="../log/unix_reporte_warn.log" />
+		<param name="Append" value="true" />
+		<param name="MaxFileSize" value="4MB" />
+		<param name="MaxBackupIndex" value="4" />
+		<param name="Threshold" value="WARN" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %p %c - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="appenderInfo" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="../log/unix_reporte_info.log" />
+		<param name="Append" value="true" />
+		<param name="MaxFileSize" value="4MB" />
+		<param name="MaxBackupIndex" value="4" />
+		<param name="Threshold" value="INFO" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %p %c - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="appenderArchivos" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="../log/unix_reporte_archivos.log" />
+		<param name="Append" value="true" />
+		<param name="MaxFileSize" value="20MB" />
+		<param name="MaxBackupIndex" value="20" />
+		<param name="Threshold" value="INFO" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %p %c - %m%n" />
+		</layout>
+	</appender>
+
+	<logger name="com.caisa.planilla.conexion.servicios.login" additivity="false">
+		<level value="DEBUG" />
+		<appender-ref ref="appenderConsola" />
+		<appender-ref ref="appenderArchivos" />
+	</logger>
+
+
+	<logger name="com.caisa.planilla" additivity="false">
+		<level value="DEBUG" />
+		<appender-ref ref="appenderConsola" />
+		<appender-ref ref="appenderFatal" />
+		<appender-ref ref="appenderError" />
+		<appender-ref ref="appenderDebug" />
+		<appender-ref ref="appenderInfo" />
+		<appender-ref ref="appenderWarn" />
+	</logger>
+
+	<root>
+	</root>
+</log4j:configuration>
