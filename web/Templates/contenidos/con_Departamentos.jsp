@@ -10,9 +10,15 @@
             </div>
             <div class="box-content">
 
-                <a href="form_descuento_ingreso_empleados.jsp" class="quick-button span2">
+                <a href="form_Departamentos.jsp" class="quick-button span2">
                     <i class="icon-folder-close-alt"></i>
-                    <p>Mantenimiento de departamentos</p>
+                    <p>Mantenimiento de Departamentos</p>
+                    <!--<span class="notification blue">7</span>-->
+                </a>
+                
+                   <a href="form_secciones.jsp" class="quick-button span2">
+                    <i class="icon-folder-close-alt"></i>
+                    <p>Mantenimiento de Secciones</p>
                     <!--<span class="notification blue">7</span>-->
                 </a>
               
