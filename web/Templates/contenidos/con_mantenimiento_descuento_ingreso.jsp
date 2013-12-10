@@ -24,11 +24,11 @@
                     <i class="icon-folder-close-alt"></i>
                     <p>Control de Descuentos</p>
                 </a>
-                <a href=".jsp" class="quick-button span2">
+                <a href="#" class="quick-button span2">
                     <i class="icon-folder-close-alt"></i>
                     <p>Consultas de Ingresos - descuentos por empleados</p>
                 </a>
-                <a href=".jsp" class="quick-button span2">
+                <a href="#" class="quick-button span2">
                     <i class="icon-folder-close-alt"></i>
                     <p>Consulta x mes de descuento -ingreso de empleados</p>
                 </a>						
