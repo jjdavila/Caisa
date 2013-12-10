@@ -1,4 +1,8 @@
 			
+<%@page import="java.util.HashMap"%>
+<%@page import="com.caisa.planilla.conexion.servicios.cargos"%>
+<%@page import="java.util.Map"%>
+<%@page import="java.util.Iterator"%>
 <!-- start: Content -->
 
 <div id="content" class="span10">
@@ -34,6 +38,22 @@
                 <div class="step-pane active" id="step1">
                     <!--Datos del Empleado-->
                     <form class="form-horizontal">
+                                    <%
+                           
+                            
+                            cargos car = new cargos();
+                             HashMap mMap = new HashMap(); 
+                                    
+                             mMap = car.ConsumeServicioCargos("jefe");
+                             //String txtcargo = mMap.get("id").toString();
+                             String  txtnombrecargo = mMap.get("nombre").toString();                           
+                             String  txtcargo = mMap.get("descripcion").toString();
+                             
+                            String txtcargo2 = mMap.get("fechaCreacion").toString();
+                          String txtnombrecargo2 = mMap.get("usuarioidcreo").toString();
+                            
+         
+                        %>
 
 
                         <div class="row-fluid">            
@@ -42,9 +62,10 @@
                                                                
                                                               
                                     <div class="control-group">
-                                        <label class="control-label" for="txtDepartamentos">codigo del cargo</label>
+                                        <label class="control-label" for="txtcargo">codigo del cargo</label>
                                         <div class="controls">
-                                            <input type="text" id="txtDepartamentos">
+                                            <input type="text" id="txtcargo" name="txtcargo"
+                                                   value="<%=txtcargo%>">
                                             <span class="help-inline"></span>
 
                                         </div>
@@ -53,11 +74,17 @@
                                         <div class="control-group">
                                         <label class="control-label" for="txtnombrecargo">Nombre del cargo</label>
                                         <div class="controls">
-                                            <input type="text" id="txtnombrecargo">
+                                            <input type="text" id="txtnombrecargo" name="txtnombrecargo" value="<%=txtnombrecargo%>">
                                             <span class="help-inline"></span>
 
                                         </div>
-                                    </div>                                    
+                                    </div> 
+                                            
+                                            
+                                            <div class="form-actions">
+                                                <button type="submit" id="enviar" name="enviar"  value="Buscar" class="btn btn-primary">Buscar</button>
+                                                <button type="reset" class="btn">Cancelar</button>
+                                            </div>
                                          <!--<div class="control-group">
                                             <label class="control-label" for="txttipo">Tipo o Clase</label>
                                             <div class="controls">
@@ -71,6 +98,7 @@
         
                                  
                             </div>
+ 
                         </form>
                         
                         </div>
