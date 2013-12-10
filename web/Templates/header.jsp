@@ -37,7 +37,7 @@
 								<li><a href="#"><i class="icon-user"></i> Profile</a></li>
 								<li><a href="#"><i class="icon-cog"></i> Settings</a></li>
 								<li><a href="#"><i class="icon-envelope"></i> Messages</a></li>
-								<li><a href="login.html"><i class="icon-off"></i> Logout</a></li>
+								<li><a href="index.jsp"><i class="icon-off"></i> Logout</a></li>
 							</ul>
 						</li>
 						<!-- end: User Dropdown -->
