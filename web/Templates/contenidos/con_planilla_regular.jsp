@@ -15,9 +15,9 @@
                     <p>Calculo de planilla quincenal</p>
                     <!--<span class="notification blue">7</span>-->
                 </a>
-                <a href="#" class="quick-button-small span1">
+                <a href="form_planilla_regular_por_empleado.jsp" class="quick-button-small span1">
                     <i class="icon-folder-close-alt"></i>
-                    <p></p>
+                    <p>Calculo de planilla de empleado</p>
 
                 </a>
                 <a href="#" class="quick-button-small span1">
