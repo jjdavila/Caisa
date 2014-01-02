@@ -11,6 +11,7 @@ import com.sun.jersey.api.client.UniformInterfaceException;
 import com.sun.jersey.api.client.WebResource;
 import com.sun.jersey.api.client.config.ClientConfig;
 import com.sun.jersey.api.client.config.DefaultClientConfig;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import org.apache.log4j.Logger;
@@ -27,6 +28,7 @@ public class empleado {
 
     public static Logger log = Logger.getLogger(login.class);
     private WebResource webResource;
+
     private Client client;
     private String BASE_URI = null;
 
@@ -35,6 +37,7 @@ public class empleado {
         BASE_URI = propiedades.getValor("url_servicios");
         client = Client.create(config);
         webResource = client.resource(BASE_URI).path("empleados/");
+       
     }
 
     public HashMap ConsumeServicioEmpleado(String cedula) throws UniformInterfaceException {
@@ -64,6 +67,13 @@ public class empleado {
                 String nacionalidad = (String) jsonObject.get("idNacionalidad").toString();
                 String tipodesangre = (String) jsonObject.get("tipodesangre").toString();
                  String numCta = (String) jsonObject.get("nroCuenta").toString();
+                 
+                 Date fecha = new Date ();
+                 fecha.toString();
+                 String fechadenacimiento = (String) jsonObject.get("fechanacimiento").toString();
+                 
+              
+                 
                 
                  mMap.put("idEmpleado",numerodeempleado);
                  mMap.put("nombre",nombre);
@@ -74,6 +84,8 @@ public class empleado {
                   mMap.put("idNacionalidad", nacionalidad);
 		 mMap.put("tipodesangre", tipodesangre);
                   mMap.put("nroCuenta", numCta);
+                  
+                  mMap.put("fechanacimiento", fechadenacimiento);
                  
                
                 
@@ -123,7 +135,7 @@ public class empleado {
         return mMap;
  
     }
-
+   
     public void close() {
         client.destroy();
     }

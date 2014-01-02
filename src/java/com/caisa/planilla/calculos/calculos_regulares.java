@@ -26,19 +26,71 @@ public class calculos_regulares {
     
         public static Logger log = Logger.getLogger(login.class);
     private WebResource webResource;
+      private WebResource webResourceEmpleado;
+       private WebResource webResourceHorasTrabajadas;
     private Client client;
     private String BASE_URI = null;
     
      public calculos_regulares() {
-        ClientConfig config = new DefaultClientConfig();
-        BASE_URI = propiedades.getValor("url_servicios");
-        client = Client.create(config);
-        webResource = client.resource(BASE_URI).path("contrato/");
+         ClientConfig config = new DefaultClientConfig();
+         BASE_URI = propiedades.getValor("url_servicios");
+         client = Client.create(config);
+         webResource = client.resource(BASE_URI).path("contrato/");
+         webResourceEmpleado = client.resource(BASE_URI).path("empleados/");
+         webResourceHorasTrabajadas = client.resource(BASE_URI).path("horastrabajadas/");
     }
+     
+     public HashMap ConsumeServicioHorasTrabajadas(int idEmpleadoNumero ) throws UniformInterfaceException
+     {
+         HashMap mMapHoras = new HashMap(); 
+        WebResource resource = webResourceHorasTrabajadas;
+        //String horasTrabajadas = null;
+        String idEstado = null;
+        String numEmpleado = null;
+        
+         try {
+             
+             // resource devuleve el json que viene del servicio
+            resource = resource.path("idEmpleadoNumero").path(java.text.MessageFormat.format("{0}", new Object[]{idEmpleadoNumero}));
+            //este if comprueba que la informacion que trae el servicio tenga el formato esperado
+            if (resource.accept("application/json").get(String.class).length() > 2) {
+                //  el "resultado" es lo que devolvio el servicio en forma de string
+                String resultado = resource.accept("application/json").get(String.class);
+                int tamanio = resultado.length();
+                resultado = resultado.substring(1, tamanio - 1);
+                JSONParser parser = new JSONParser();
+                Object obj = parser.parse(resultado);
+                JSONObject jsonObject = (JSONObject) obj;
+                String numerodeempleado = (String) jsonObject.get("idEmpleadoNumero").toString();
+                String horasTrabajadas = (String) jsonObject.get("horasTrabajadas").toString();
+                
+                mMapHoras.put("idEmpleadoNumero",numerodeempleado);
+                
+                mMapHoras.put("horasTrabajadas",horasTrabajadas);
+               
+                 
+                    log.info(mMapHoras);
+            
+            }
+             else {
+                log.warn("el varor retornado por el servicio no tiene el formato esperado");
+            }
+             
+         } 
+         catch (ParseException ex) {
+            log.error("error en la interpretacion de json " + ex);
+         }
+         
+            return mMapHoras;
+         
+     }
+     
+     
+     
     
       public HashMap ConsumeServicioEmpleado(String cedula) throws UniformInterfaceException {
        HashMap mMap = new HashMap(); 
-        WebResource resource = webResource;
+        WebResource resource = webResourceEmpleado;
         String sexo = null;
         String idEstado = null;
         String numEmpleado = null;
@@ -54,11 +106,14 @@ public class calculos_regulares {
                 JSONParser parser = new JSONParser();
                 Object obj = parser.parse(resultado);
                 JSONObject jsonObject = (JSONObject) obj;
-                String numerodeempleado = (String) jsonObject.get("idEmpleado");
+               String numerodeempleado = (String) jsonObject.get("idEmpleado");
                 String idcedula = (String) jsonObject.get("cedula");
                 String nombre = (String) jsonObject.get("nombre");
                 String apellido = (String) jsonObject.get("apellido");
-                String numcss = (String) jsonObject.get("segurosocial").toString();      
+                String numcss = (String) jsonObject.get("segurosocial").toString();
+                String estadocivil = (String) jsonObject.get("idEstadoCivil").toString();
+                String nacionalidad = (String) jsonObject.get("idNacionalidad").toString();
+                String tipodesangre = (String) jsonObject.get("tipodesangre").toString();
                  String numCta = (String) jsonObject.get("nroCuenta").toString();
                 
                  mMap.put("idEmpleado",numerodeempleado);
@@ -66,7 +121,12 @@ public class calculos_regulares {
                  mMap.put("apellido",apellido);
                   mMap.put("cedula",idcedula);                
 		 mMap.put("segurosocial", numcss);
+		 mMap.put("idEstadoCivil", estadocivil);
+                  mMap.put("idNacionalidad", nacionalidad);
+		 mMap.put("tipodesangre", tipodesangre);
                   mMap.put("nroCuenta", numCta);
+                  
+          
 
                                 
 //                // loop array para presentar la descripcion del numero de empleado

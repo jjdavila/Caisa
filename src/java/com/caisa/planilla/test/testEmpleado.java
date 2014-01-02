@@ -19,18 +19,22 @@ public class testEmpleado {
     
      public static void main (String [] args){
          
-//         empleado emple = new empleado ();
-//         emple.ConsumeServicioEmpleado("8-762-865");
-//         
+         empleado emple = new empleado ();
+         emple.ConsumeServicioEmpleado("8-797-945");
+         
 //         log.info(emple);
          
 //         cargos cargos = new cargos ();
 //         cargos.ConsumeServicioCargos("jefe");
 //         
 //         log.info(cargos);
-         
-         calculos_regulares cal = new calculos_regulares();
-         cal.ConsumeServicioContrato("0003");
+//         
+//         calculos_regulares cal = new calculos_regulares();
+//         cal.ConsumeServicioContrato("0003");
+//         cal.ConsumeServicioEmpleado("8-797-945");
+//         cal.ConsumeServicioHorasTrabajadas(0003);
+//         
+//       
          
          log.info(cal);
 //         

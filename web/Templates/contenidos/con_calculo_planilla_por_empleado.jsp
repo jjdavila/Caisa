@@ -1,3 +1,4 @@
+<%@page import="com.sun.jersey.api.representation.Form"%>
 <%@page import="com.caisa.planilla.calculos.calculos_regulares"%>
 <%@page import="com.caisa.planilla.conexion.servicios.empleado"%>
 <%@page import="java.util.HashMap"%>
@@ -20,11 +21,9 @@
                 <form class="form-horizontal">
 
                     <%
-                        
-                       
-                        HashMap mMapEmp = new HashMap();
+                         HashMap mMapEmp = new HashMap();
                         boolean resultado = true;
-                        
+                        String numEmple ="" ;
                         String nombre ="" ;
                         String apellido ="";
                         String txtcedula ="" ;
@@ -37,25 +36,28 @@
                         String salariobruto ="";
                         String salarioXhora ="";
                         
-                      
+                        HashMap mMaphoras = new HashMap();
+                        String horastrabajadas ="";
+                        double salario_en_mano = 0; 
+                        String pago_total ="";
+                        
+                        String total ="";
+
                         if (request.getParameter("enviar") != null) {
                             
                          String cedula = request.getParameter("numerodecedula").toString();
                          String numEmpleado = request.getParameter("numEmpleado").toString();
-
-                         empleado emple = new empleado();
-                         mMapEmp = emple.ConsumeServicioEmpleado(cedula);
+                         int idEmpleadoNumero = Integer.parseInt(numEmpleado);
                          
                          calculos_regulares calculos = new calculos_regulares();
+                         mMapEmp = calculos.ConsumeServicioEmpleado(cedula);
                          mMapContra = calculos.ConsumeServicioContrato(numEmpleado);
+                        mMaphoras = calculos.ConsumeServicioHorasTrabajadas(idEmpleadoNumero);
                          
-                         
-                                // mMap = emple.ConsumeServicioEmpleado("8-762-865");
-                        // String numerodeempleado = mMap.get("idEmpleado").toString();
-                       
-                          
-                                if (resultado){
+                        if (resultado){
                                     
+                                  
+                          numEmple = mMapContra.get("numeroEmpleado").toString();          
                           nombre = mMapEmp.get("nombre").toString();
                           apellido = mMapEmp.get("apellido").toString();
                           txtcedula = mMapEmp.get("cedula").toString();
@@ -65,8 +67,16 @@
                           tiposangre = mMapEmp.get("tipodesangre").toString();
                           
                           salariobruto = mMapContra.get("salarioBruto").toString();
-                          salarioXhora =mMapContra.get("salarioPorHora").toString();
-
+                          salarioXhora = mMapContra.get("salarioPorHora").toString();
+                          
+                         horastrabajadas = mMaphoras.get("horasTrabajadas").toString();
+                         
+                         
+                       
+                      salario_en_mano = Double.parseDouble(horastrabajadas) * Double.parseDouble(salarioXhora);
+                      //pago_total = Integer.toString(salario_en_mano).toString();
+                         
+                     
                     %>
                         <script language="javascript" type="text/javascript">
                                                   
@@ -83,8 +93,7 @@
                        <%
                         }
                         }
-                       
-            
+           
                     %>
                     <div class="row-fluid">            
                         <div class="span6">
@@ -110,7 +119,7 @@
                                     <label class="control-label" for="numEmpleado">Número de Empleado</label>
                                     <div class="controls">
                                         <input type="text"  id="numEmpleado" 
-                                               name="numEmpleado">
+                                               name="numEmpleado" value="<%=numEmple%>">
                                         <!--<span class="help-inline">Something may have gone wrong</span>-->
                                     </div>
                                 </div>
@@ -171,7 +180,7 @@
                                  <div class="control-group">
                                     <label class="control-label" for="hr_trabajadas">Horas Trabajadas</label>
                                     <div class="controls">
-                                        <input type="text" id="hr_trabajadas">
+                                        <input type="text" id="hr_trabajadas" value="<%=horastrabajadas%>">
 
                                     </div>
                                 </div>
@@ -204,7 +213,15 @@
 
                                       </div>
                                   </div>
+                                  
+                                         <h3>total a pagar</h3>
+                                         <div class="control-group">
+                                             <label class="control-label" for="pago">Total a Pagar</label>
+                                             <div class="controls">
+                                                 <input type="text" id="pago" value="<%=salario_en_mano%>">
 
+                                             </div>
+                                         </div>
                      
  
                             </fieldset>                                     

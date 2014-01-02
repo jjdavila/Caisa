@@ -31,7 +31,9 @@
                         //String estadocivil = mMap.get("idEstadoCivil").toString();
                         String nacionalidad="";
                         String tiposangre ="";
-                      
+                        
+                        String fechanacimiento ="";
+                       
                         if (request.getParameter("enviar") != null) {
                             
                          String cedula = request.getParameter("numerodecedula").toString();
@@ -52,6 +54,9 @@
                         //String estadocivil = mMap.get("idEstadoCivil").toString();
                           nacionalidad = mMap.get("idNacionalidad").toString();
                           tiposangre = mMap.get("tipodesangre").toString();
+                          
+                          //fechanacimiento = mMap.get("fechanacimieto").toString();
+                        
                     
                     %>
                         <script language="javascript" type="text/javascript">
@@ -130,11 +135,21 @@
                                 <div class="control-group">
                                     <label class="control-label" for="estadocivil">Estado Cicil</label>
                                     <div class="controls">
-                                        <select id="estadocivil" name="estadocivil" data-rel="chosen">
-                                            <option>Casado</option>
-                                            <option>Soltero</option>
-                                            <option>Unido</option>  
-                                            <option>Divorciado</option>                                                         
+                                        <select  id="estadocivil" name="estadocivil" data-rel="chosen">
+                                            <%
+                                                
+                                                for(int i=0; i<=10; i++) {
+                                                    out.print("<option>Soltero</option>");
+                                                
+                                                }                                         
+                                                
+                                            %>
+                                            
+                                            <%--<%for(int i=0;i<vec.size();i++){%>
+                                            <option value="<%=(i+1)%>"><%=vec.get(i).toString()%></option> 
+                                            <%}%>--%>
+                                            
+                                                                                                
                                         </select>
                                     </div>
                                 </div>
@@ -151,7 +166,7 @@
                                     <label class="control-label" for="fechadenacimiento">Fecha de Nacimiento</label>
                                     <div class="controls">
                                         <input type="text" class="input-xlarge datepicker" 
-                                               id="fechadenacimiento" value="">
+                                               id="fechadenacimiento" value="<%=fechanacimiento%>">
                                     </div>
                                 </div>
 
@@ -203,27 +218,34 @@
                                     </div>
                                 </div>
 
-                                <div class="control-group">
+                                
+                                 <div class="control-group">
                                     <label class="control-label" for="claveRenta">Clave de la Renta</label>
                                     <div class="controls">
-                                        <input type="text" id="claveRenta">
-
+                                        <select id="claveRenta" data-rel="chosen">
+                                            <option>SI</option>
+                                            <option>NO</option>                                                     
+                                        </select>
                                     </div>
                                 </div>
 
-                                <div class="control-group">
+                                
+                                       <div class="control-group">
                                     <label class="control-label" for="formadepago">Forma de Pago</label>
                                     <div class="controls">
-                                        <input type="text" id="formadepago">
-
+                                        <select id="formadepago" data-rel="chosen">
+                                            <option>SI</option>
+                                            <option>NO</option>                                                     
+                                        </select>
                                     </div>
                                 </div>
-
-                                <div class="control-group">
+                                     <div class="control-group">
                                     <label class="control-label" for="frecuenciadepago">Frecuencia de Pago</label>
                                     <div class="controls">
-                                        <input type="text" id="frecuenciadepago">
-
+                                        <select id="frecuenciadepago" data-rel="chosen">
+                                            <option>SI</option>
+                                            <option>NO</option>                                                     
+                                        </select>
                                     </div>
                                 </div>
 
@@ -296,14 +318,14 @@
                                 </div>
 
                                 <div class="control-group">
-                                    <label class="control-label" for="proximasvacaciones">Próximas Vacaiones</label>
+                                    <label class="control-label" for="fechadeterminacion">fecha de terminación</label>
                                     <div class="controls">
-                                        <input type="text" class="input-xlarge datepicker" id="proximasvacaciones" value="">
+                                        <input type="text" class="input-xlarge datepicker" id="fechadeterminacion" value="">
                                     </div>
                                 </div>
 
                                 <div class="control-group">
-                                    <label class="control-label" for="isr">Impuesto Sobre la Renta</label>
+                                    <label class="control-label" for="isr">Impuesto Sobre la Renta sobre gasto representativo</label>
                                     <div class="controls">
                                         <select id="isr" data-rel="chosen">
                                             <option>SI</option>
