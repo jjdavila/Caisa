@@ -31,8 +31,8 @@
 
                         boolean resultad_login=true;
                         if (request.getParameter("enviar") != null) {
-                            String username = request.getParameter("username").toString();
-                            String password = request.getParameter("password").toString();
+                            String username = request.getParameter("username").toString().trim();
+                            String password = request.getParameter("password").toString().trim();
                             login iniciar = new login();
                             resultad_login = iniciar.ConsumeServicio(username, password);
                         
