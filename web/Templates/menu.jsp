@@ -30,7 +30,7 @@
 								</li>
 							</ul>	
 						</li>	
-<!-- Pestaña -->
+<!-- PestaÃ±a -->
 						<li>
 							<a class="dropmenu" href="#"><i class="icon-group"></i><span class="hidden-tablet">Empleado</span> <span class="label">8</span></a>
 							<ul>
@@ -39,7 +39,7 @@
 									<a class="submenu" href="formAcumuladosBasicos.html"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Acumulados</span> <span class="label">8</span></a>
 									<a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Renta Fija</span> <span class="label">3</span></a>
 									<a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Catagolos</span> <span class="label">3</span></a>
-									<a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Eliminar Empleado Censante</span> <span class="label"></span></a>
+									<a class="submenu" href="form_eliminar_empleado_cesante.jsp"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Eliminar Empleado Censante</span> <span class="label"></span></a>
 									<a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Informes</span> <span class="label">3</span></a>
 									<a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Lista de Acumulados Basicos</span> <span class="label"></span></a>
 									<a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Descuentos/Ingresos por Empleado</span> <span class="label">5</span></a>
@@ -58,7 +58,7 @@
 										<a class="submenu" href="formAcumuladosBasicos.html"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Acumulados</span> <span class="label"></span></a>
 										<a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Renta Fija</span> <span class="label">3</span></a>
 										<a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Catagolos</span> <span class="label"></span></a>
-										<a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Eliminar Empleado Censante</span> <span class="label"></span></a>
+										<a class="submenu" href="form_eliminar_empleado_cesante.jsp"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Eliminar Empleado Censante</span> <span class="label"></span></a>
 										<a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Informes</span> <span class="label"></span></a>
 										<a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Lista de Acumulados Basicos</span> <span class="label"></span></a>
 										<a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Descuentos/Ingresos por Empleado</span> <span class="label"></span></a>
@@ -66,7 +66,7 @@
 										</li> 
 								</ul>	
 							</li>	
-									<!-- Pestaña configuraciones -->
+									<!-- PestaÃ±a configuraciones -->
 
 							<li>
 								<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Configuraciones</span> <span class="label">4</span></a>
@@ -80,7 +80,7 @@
 										</li> 
 								</ul>	
 							</li>			
-										<!-- Pestaña  calculos planilla -->
+										<!-- PestaÃ±a  calculos planilla -->
 
 							<li>
 								<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Calculos/Planilla</span> <span class="label">5</span></a>
@@ -90,7 +90,7 @@
 										<a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Planilla Vacaciones</span> <span class="label"></span></a>
 										<a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Planilla Especial</span> <span class="label"></span></a>
 										<a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Planilla XII mes</span> <span class="label">8</span></a>	
-										<a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Planilla Liquidación</span> <span class="label">6</span></a>			
+										<a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Planilla LiquidaciÃ³n</span> <span class="label">6</span></a>			
 
 										</li> 
 								</ul>	
@@ -98,7 +98,7 @@
 
 
 
-										<!-- Pestaña Informe CSS -->
+										<!-- PestaÃ±a Informe CSS -->
 
 							<li>
 								<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Informe/CSS</span> <span class="label">8</span></a>
@@ -116,7 +116,7 @@
 								</ul>	
 							</li>
 
-										<!-- Pestaña Fondo Cesantia -->
+										<!-- PestaÃ±a Fondo Cesantia -->
 
 							<li>
 								<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Fondo cesantia</span> <span class="label">8</span></a>
@@ -134,7 +134,7 @@
 								</ul>	
 							</li>
 
-							<!-- Pestaña Reportes -->
+							<!-- PestaÃ±a Reportes -->
 
 							<li>
 								<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Reportes</span> <span class="label">2</span></a>
@@ -146,7 +146,7 @@
 								</ul>	
 							</li>
 
-							<!-- Pestaña Consulta -->
+							<!-- PestaÃ±a Consulta -->
 
 							<li>
 								<a class="dropmenu" href="#"><i class="icon-question-sign"></i><span class="hidden-tablet">Consula</span> <span class="label"></span></a>
@@ -158,14 +158,14 @@
 										</li> 
 								</ul>	
 							</li>
-										<!-- Pestaña Cierre -->
+										<!-- PestaÃ±a Cierre -->
 
 							<li>
 								<a class="dropmenu" href="#"><i class="icon-lock"></i><span class="hidden-tablet">Cierre</span> <span class="label">9</span></a>
 								<ul>
 										<li><a class="submenu" href="#"><i class="icon-hdd"></i><span class="hidden-tablet">Respaldo de Archivos</span></a></li>
 										<li>
-										<a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Preparación / Obrero Patronal</span> <span class="label"></span></a>
+										<a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">PreparaciÃ³n / Obrero Patronal</span> <span class="label"></span></a>
 										<a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Diario de asientos Contables</span> <span class="label"></span></a>
 										<a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Cierre Cuota Obrero Patronal</span> <span class="label"></span></a>	
 										<a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Exportar Datos a PeachTree</span> <span class="label"></span></a>	
@@ -203,7 +203,7 @@
                     </li>
                 </ul>	
             </li>	
-            <!-- Pestaña -->
+            <!-- PestaÃ±a -->
             <li>
                 <a class="dropmenu" href="#"><i class="icon-group"></i><span class="hidden-tablet">Empleado</span> <span class="label">8</span></a>
                 <ul>
@@ -212,8 +212,8 @@
                         <a class="submenu" href="formAcumuladosBasicos.jsp"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Acumulados</span> <span class="label">8</span></a>
                         <a class="submenu" href="formRentaFija.jsp"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Renta Fija</span> <span class="label"></span></a>
                         <a class="submenu" href="form_catalogos_empleados_activos.jsp"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Catagolos</span> <span class="label">3</span></a>
-                        <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Eliminar Empleado Censante</span> <span class="label"></span></a>
-                        <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Informes</span> <span class="label">3</span></a>
+                        <a class="submenu" href="form_eliminar_empleado_cesante.jsp"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Eliminar Empleado Censante</span> <span class="label"></span></a>
+                        <a class="submenu" href="form_informe_salario_vacaciones.jsp"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Informes de Salarios</span> <span class="label">3</span></a>
                         <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Lista de Acumulados Basicos</span> <span class="label"></span></a>
                         <a class="submenu" href="form_descuento_ingreso_empleados.jsp"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Descuentos/Ingresos por Empleado</span> <span class="label">5</span></a>
 
@@ -226,11 +226,11 @@
             <li>
                 <a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Datos Y secciones/Cargos</span> <span class="label">7</span></a>
                 <ul>
-                    <li><a class="submenu" href="#"><i class="icon-hdd"></i><span class="hidden-tablet">Departamentos </span></a></li>
+                    <li><a class="submenu" href="form_Departamentos.jsp"><i class="icon-hdd"></i><span class="hidden-tablet">Departamentos </span></a></li>
                     <li>
-                        <a class="submenu" href="formAcumuladosBasicos.html"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">secciones</span> <span class="label"></span></a>
-                        <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Cargo y Ocupaciones</span> <span class="label">3</span></a>
-                        <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Catagolos de departamentos</span> <span class="label"></span></a>
+                        <a class="submenu" href="form_secciones.jsp"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">secciones</span> <span class="label"></span></a>
+                        <a class="submenu" href="form_cargos.jsp"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Cargo y Ocupaciones</span> <span class="label">3</span></a>
+                        <a class="submenu" href="form_Departamentos.jsp"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Catagolos de departamentos</span> <span class="label"></span></a>
                         <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Catalogos de secciones</span> <span class="label"></span></a>
                         <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Lista de secciones/cta contable</span> <span class="label"></span></a>
                         <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Catalogos de Cargos</span> <span class="label"></span></a>
@@ -239,7 +239,7 @@
                     </li> 
                 </ul>	
             </li>	
-            <!-- Pestaña configuraciones -->
+            <!-- PestaÃ±a configuraciones -->
 
             <li>
                 <a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Configuraciones</span> <span class="label">4</span></a>
@@ -247,23 +247,23 @@
                     <li><a class="submenu" href="#"><i class="icon-hdd"></i><span class="hidden-tablet">Cuentas Contables</span></a></li>
                     <li>
                         <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Periodos de Pago</span> <span class="label"></span></a>
-                        <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Jornadas de Trabajo</span> <span class="label"></span></a>
+                        <a class="submenu" href="form_jornada_de_trabajo.jsp"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Jornadas de Trabajo</span> <span class="label"></span></a>
                         <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Fondo de Cesantia</span> <span class="label"></span></a>				
 
                     </li> 
                 </ul>	
             </li>			
-            <!-- Pestaña  calculos planilla -->
+            <!-- PestaÃ±a  calculos planilla -->
 
             <li>
                 <a class="dropmenu" href="#"><i class="icon-money"></i><span class="hidden-tablet">Calculos/Planilla</span> <span class="label">5</span></a>
                 <ul>
-                    <li><a class="submenu" href="#"><i class="icon-hdd"></i><span class="hidden-tablet">Planilla Regular</span><span class="label">8</span></a></li>
+                    <li><a class="submenu" href="form_planilla_regular.jsp"><i class="icon-hdd"></i><span class="hidden-tablet">Planilla Regular</span><span class="label">8</span></a></li>
                     <li>
                         <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Planilla Vacaciones</span> <span class="label"></span></a>
                         <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Planilla Especial</span> <span class="label"></span></a>
                         <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Planilla XII mes</span> <span class="label">8</span></a>	
-                        <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Planilla Liquidación</span> <span class="label">6</span></a>			
+                        <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Planilla LiquidaciÃ³n</span> <span class="label">6</span></a>			
 
                     </li> 
                 </ul>	
@@ -271,7 +271,7 @@
 
 
 
-            <!-- Pestaña Informe CSS -->
+            <!-- PestaÃ±a Informe CSS -->
 
             <li>
                 <a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Informe/CSS</span> <span class="label">8</span></a>
@@ -279,7 +279,7 @@
                     <li><a class="submenu" href="#"><i class="icon-hdd"></i><span class="hidden-tablet">Planilla Mesnual CSS</span>6</a></li>
                     <li>
                         <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Informe Mensual Salarios</span> <span class="label"></span></a>
-                        <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Informe de Descuentos</span> <span class="label">5</span></a>
+                        <a class="submenu" href="form_informe_de_descuento_de_acreedor.jsp"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Informe de Descuentos</span> <span class="label">5</span></a>
                         <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Anexo 03</span> <span class="label">8</span></a>	
                         <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Acumulados Horas</span> <span class="label"></span></a>	
                         <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Acumulados Nuevos</span> <span class="label"></span></a>
@@ -289,7 +289,7 @@
                 </ul>	
             </li>
 
-            <!-- Pestaña Fondo Cesantia -->
+            <!-- PestaÃ±a Fondo Cesantia -->
 
             <li>
                 <a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Fondo cesantia</span> <span class="label">8</span></a>
@@ -307,7 +307,7 @@
                 </ul>	
             </li>
 
-            <!-- Pestaña Reportes -->
+            <!-- PestaÃ±a Reportes -->
 
             <li>
                 <a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Reportes</span> <span class="label">2</span></a>
@@ -319,7 +319,7 @@
                 </ul>	
             </li>
 
-            <!-- Pestaña Consulta -->
+            <!-- PestaÃ±a Consulta -->
 
             <li>
                 <a class="dropmenu" href="#"><i class="icon-question-sign"></i><span class="hidden-tablet">Consula</span> <span class="label"></span></a>
@@ -331,14 +331,14 @@
                     </li> 
                 </ul>	
             </li>
-            <!-- Pestaña Cierre -->
+            <!-- PestaÃ±a Cierre -->
 
             <li>
                 <a class="dropmenu" href="#"><i class="icon-lock"></i><span class="hidden-tablet">Cierre</span> <span class="label">9</span></a>
                 <ul>
                     <li><a class="submenu" href="#"><i class="icon-hdd"></i><span class="hidden-tablet">Respaldo de Archivos</span></a></li>
                     <li>
-                        <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Preparación / Obrero Patronal</span> <span class="label"></span></a>
+                        <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">PreparaciÃ³n / Obrero Patronal</span> <span class="label"></span></a>
                         <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Diario de asientos Contables</span> <span class="label"></span></a>
                         <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Cierre Cuota Obrero Patronal</span> <span class="label"></span></a>	
                         <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Exportar Datos a PeachTree</span> <span class="label"></span></a>	

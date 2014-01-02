@@ -7,6 +7,7 @@ public String bd = "caisa";
 public String login = "root";
 public String password = "";
 public String url = "jdbc:mysql://localhost/"+bd;
+
 public Statement conectar() {
 Connection conn = null;
 Statement st=null;

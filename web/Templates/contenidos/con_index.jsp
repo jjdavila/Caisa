@@ -52,7 +52,7 @@
 						</a>
 						<a class="quick-button span2">
 							<i class="icon-comments-alt"></i>
-							<p>OTRA</p>
+							<p>EVENTUALES</p>
 							 
 						</a>
 						

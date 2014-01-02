@@ -9,17 +9,17 @@
             </div>
             <div class="box-content">
 
-                <a href="form_catalogos_empleados_activos.jsp" class="quick-button-small span1">
+                <a href="form_catalogos_empleados_activos.jsp" class="quick-button span2">
                     <i class="icon-folder-close-alt"></i>
                     <p>Catalogos Empleados activo</p>
                     <!--<span class="notification blue">7</span>-->
                 </a>
-                <a href="form_catalogos_empleados_dtos.jsp" class="quick-button-small span1">
+                <a href="form_catalogos_empleados_dtos.jsp" class="quick-button span2">
                     <i class="icon-folder-close-alt"></i>
                     <p>Catalogos empleado x dtos</p>
 
                 </a>
-                <a href="form_catalogos_empleados_activos.jsp" class="quick-button-small span1">
+                <a href="form_catalogos_empleados_activos.jsp" class="quick-button span2">
                     <i class="icon-folder-close-alt"></i>
                     <p>Catalogos empleados generales</p>
                 </a>

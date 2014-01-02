@@ -5,23 +5,35 @@
     <div class="row-fluid">	
         <div class="box span12">
             <div class="box-header">
-                <h2><i class="icon-folder-close-alt"></i>Catalogos Empleados</h2>
+                <h2><i class="icon-folder-close-alt"></i>Informe de descuento de acreedor</h2>
             </div>
             <div class="box-content">
 
-                <a href="form_catalogos_empleados_activos.jsp" class="quick-button span2">
+                 <a href="form_informe_de_descuento_de_acreedor_x_persona.jsp" class="quick-button span2">
                     <i class="icon-folder-close-alt"></i>
-                    <p>Catalogos Empleados activo</p>
+                    <p>Informe de descuento de acreedor por persona</p>
                     <!--<span class="notification blue">7</span>-->
                 </a>
-                <a href="form_catalogos_empleados_dtos.jsp" class="quick-button span2">
+                <a href="con_informe_resumen_pago_acreedor_x_persona.jsp" class="quick-button span2">
                     <i class="icon-folder-close-alt"></i>
-                    <p>Catalogos empleado x dtos</p>
+                    <p>Resumen Pago de Acreedoor por persona</p>
 
                 </a>
-                <a href="form_catalogos_empleados_activos.jsp" class="quick-button span2">
+                <a href="form_informe_de_descuento_de_acreedor.jsp" class="quick-button span2">
                     <i class="icon-folder-close-alt"></i>
-                    <p>Catalogos empleados generales</p>
+                    <p>Informe de descuento de acreedor</p>
+                </a>
+                
+                  <a href="form_informe_resumen_pago_acreedor.jsp" class="quick-button span2">
+                    <i class="icon-folder-close-alt"></i>
+                    <p>Resumen Pago de Acreedoor</p>
+
+                </a>
+                
+                  <a href="form_informe_retencion_empleado.jsp" class="quick-button span2">
+                    <i class="icon-folder-close-alt"></i>
+                    <p>Informe de retencion/ empleados</p>
+
                 </a>
 
                 <div class="clearfix"></div>
@@ -34,7 +46,7 @@
 
         <div class="box span12">
             <div class="box-header">
-                <h2><i class="icon-edit"></i>Catalogo de Empleado - Dtos</h2>
+                <h2><i class="icon-edit"></i>Informe </h2>
                 <div class="box-icon">
 
                     <a href="#" class="btn-minimize"><i class="icon-chevron-up"></i></a>
@@ -46,8 +58,20 @@
                 <form class="form-horizontal">
                     <div class="row-fluid">            
                         <div class="span6">
-                            <h3>Este informa brinda al usuario un listado de todos los empleados que estan en el sistema. El mismo aparecera ordenado por el centro de Costo</h3>
+                            <h1>EN CONSTRUCCION VER CON EL SISTEMA DE CAISA Y VALIDAR</h1>
                             <fieldset>  
+                                
+                                
+                                    <div class="control-group">
+                                    <label class="control-label" for="cmbnumerodeacreedor">Numero de acreedor</label>
+                                    <div class="controls">
+                                        <select id="cmbnumerodeacreedor" data-rel="chosen">
+                                            <option>1-LG Almacen de construccion LG</option>
+                                            <option>B</option>  
+                                            <option>1</option>  
+                                        </select>
+                                    </div>
+                                </div>
 
                                 <div class="control-group">
                                     <label class="control-label" for="cmbtipodesalida">Tipo de salidad</label>
@@ -56,16 +80,6 @@
                                             <option>Pantalla</option>
                                             <option>Impresora</option>
 
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="control-group">
-                                    <label class="control-label" for="cmbfrecuenciadepago">Frecuencia de Pago</label>
-                                    <div class="controls">
-                                        <select id="cmbfrecuenciadepago" data-rel="chosen">
-                                            <option>Semanal</option>
-                                            <option>Quincenal</option>                                                     
                                         </select>
                                     </div>
                                 </div>

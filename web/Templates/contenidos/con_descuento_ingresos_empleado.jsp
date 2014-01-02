@@ -1,4 +1,6 @@
 			
+<%@page import="java.util.HashMap"%>
+<%@page import="com.caisa.planilla.conexion.servicios.empleado"%>
 <!-- start: Content -->
 
 <div id="content" class="span10">
@@ -20,15 +22,15 @@
                     <p>Maestro Ingresos - Descuentos</p>
 
                 </a>
-                <a href="formAcumuladosVacaciones.jsp" class="quick-button span2">
+                <a href="form_informe_control_de_descuento.jsp" class="quick-button span2">
                     <i class="icon-folder-close-alt"></i>
                     <p>Control de Descuentos</p>
                 </a>
-                <a href="formAcumuladosXIIMes.jsp" class="quick-button span2">
+                <a href=".jsp" class="quick-button span2">
                     <i class="icon-folder-close-alt"></i>
                     <p>Consultas de Ingresos - descuentos por empleados</p>
                 </a>
-                <a href="formAcumuladosXperiodos.jsp" class="quick-button span2">
+                <a href=".jsp" class="quick-button span2">
                     <i class="icon-folder-close-alt"></i>
                     <p>Consulta x mes de descuento -ingreso de empleados</p>
                 </a>						
@@ -49,12 +51,87 @@
                 <div class="step-pane active" id="step1">
                     <!--Datos del Empleado-->
                     <form class="form-horizontal">
+                        
+                               <%
+                        
+                       
+                        HashMap mMap = new HashMap();
+                        boolean resultado = true;
+                        
+                        String nombre ="" ;
+                        String apellido ="";
+                        String txtcedula ="" ;
+                        String segurosocial ="";
+                        //String estadocivil = mMap.get("idEstadoCivil").toString();
+                        String nacionalidad="";
+                        String tiposangre ="";
+                        String numCta ="";
+                      
+                        if (request.getParameter("enviar") != null) {
+                            
+                         String cedula = request.getParameter("numerodecedula").toString();
+
+                         empleado emple = new empleado();
+                         mMap = emple.ConsumeServicioEmpleado(cedula);
+                         
+                                // mMap = emple.ConsumeServicioEmpleado("8-762-865");
+                        // String numerodeempleado = mMap.get("idEmpleado").toString();
+                       
+                          
+                                if (resultado){
+                                    
+                          nombre = mMap.get("nombre").toString();
+                          apellido = mMap.get("apellido").toString();
+                          txtcedula = mMap.get("cedula").toString();
+                          segurosocial = mMap.get("segurosocial").toString();
+                        //String estadocivil = mMap.get("idEstadoCivil").toString();
+                          nacionalidad = mMap.get("idNacionalidad").toString();
+                          tiposangre = mMap.get("tipodesangre").toString();
+                          numCta = mMap.get("nroCuenta").toString();
+                    
+                    %>
+                        <script language="javascript" type="text/javascript">
+                                                  
+                            alert("encontrado");
+                            //location.replace("login.jsp");  
+                        </script>
+
+                       <% }          
+                        else{
+                            %>
+                            <script language="javascript" type="text/javascript">
+                            alert("no encontro la busqueda");
+                        </script>
+                       <%
+                        }
+                        }
+                       
+            
+                    %>
 
 
                         <div class="row-fluid">            
                             <div class="span6">
                                 <h3>Datos</h3>
                                 <fieldset>
+                                    
+                                       <h3>Busqueda de Empleado</h3>
+                        
+
+                                <div class="control-group">
+                                    <label class="control-label" for="numerodecedula">Número de Cédula</label>
+                                    <div class="controls">
+                                        <input type="text" id="numerodecedula" 
+                                               name="numerodecedula" value="<%=txtcedula%>">
+
+                                    </div>
+                                </div>
+                                               
+                                               
+                                <div class="form-actions">
+                                    <button type="submit" id="enviar" name="enviar"  value="Buscar" class="btn btn-primary">Buscar</button>
+                                    <button type="reset" class="btn">Cancelar</button>
+                                </div>
                                        <div class="control-group">
                                         <label class="control-label" for="numderegistro">Número de Registro</label>
                                         <div class="controls">
@@ -74,7 +151,7 @@
                                     <div class="control-group">
                                         <label class="control-label" for="numdecta">Número de cuenta</label>
                                         <div class="controls">
-                                            <input type="text" id="numdecta">
+                                            <input type="text" id="numdecta" value="<%=numCta%>">
 
                                         </div>
                                     </div>
@@ -90,7 +167,7 @@
                                     <div class="control-group">
                                         <label class="control-label" for="nombreEmpleado">Nombre del Empleado</label>
                                         <div class="controls">
-                                            <input type="text" id="nombreEmpleado">
+                                            <input type="text" id="nombreEmpleado" value="<%=nombre%>">
 
                                         </div>
                                     </div>
@@ -131,8 +208,8 @@
                                         </div>
                                     </div>
 
-                                
-                                 
+                                     </fieldset>	
+
                             </div>
                             <div class="span6">
                                 <fieldset>	
@@ -177,20 +254,27 @@
                                             <label class="control-label" for="frecuencia">Frecuencia</label>
                                             <div class="controls">
                                                 <select id="frecuencia" data-rel="chosen">
-                                                    <option>Ingreso</option>
-                                                    <option>Descuento</option>
+                                                    <option>Men</option>
+                                                    <option>Quincenal</option>
+                                                    <option>Bisemanal</option>
+                                                                                                         
+                                                </select>
+                                            </div>
+                                        </div>
+                                    
+                                    
+                                     <div class="control-group">
+                                            <label class="control-label" for="afectadiciembre">Afecta diciembre</label>
+                                            <div class="controls">
+                                                <select id="afectadiciembre" data-rel="chosen">
+                                                    <option>SI</option>
+                                                    <option>NO</option>
                                                                                                          
                                                 </select>
                                             </div>
                                         </div>
 
-                                    <div class="control-group">
-                                        <label class="control-label" for="afectadiciembre">Afecta diciembre</label>
-                                        <div class="controls">
-                                            <input type="text" id="afectadiciembre">
-
-                                        </div>
-                                    </div>
+                                
                                 
 
                                     <div class="control-group">

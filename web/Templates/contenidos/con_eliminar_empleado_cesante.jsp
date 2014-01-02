@@ -5,7 +5,7 @@
     <div class="row-fluid">	
         <div class="box span12">
             <div class="box-header">
-                <h2><i class="icon-folder-close-alt"></i>Catalogos Empleados</h2>
+                <h2><i class="icon-folder-close-alt"></i>Catalogos Empleados - Corto</h2>
             </div>
             <div class="box-content">
 
@@ -34,7 +34,7 @@
 
         <div class="box span12">
             <div class="box-header">
-                <h2><i class="icon-edit"></i>Catalogo de Empleado - Dtos</h2>
+                <h2><i class="icon-edit"></i>Catalogo de Empleado - dtos</h2>
                 <div class="box-icon">
 
                     <a href="#" class="btn-minimize"><i class="icon-chevron-up"></i></a>
@@ -46,7 +46,7 @@
                 <form class="form-horizontal">
                     <div class="row-fluid">            
                         <div class="span6">
-                            <h3>Este informa brinda al usuario un listado de todos los empleados que estan en el sistema. El mismo aparecera ordenado por el centro de Costo</h3>
+                            <h3>Este Proceso tiene como proposito eliminar empleados cesantes..... pag en construccion.....</h3>
                             <fieldset>  
 
                                 <div class="control-group">

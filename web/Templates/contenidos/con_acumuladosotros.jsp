@@ -19,15 +19,15 @@
                     <p>Acumulados Otros</p>
 
                 </a>
-                <a href="formAcumuladosVacaciones.html" class="quick-button-small span1">
+                <a href="formAcumuladosVacaciones.jsp" class="quick-button-small span1">
                     <i class="icon-folder-close-alt"></i>
                     <p>Acumulados Vacaciones</p>
                 </a>
-                <a href="formAcumuladosXIIMes.html" class="quick-button-small span1">
+                <a href="formAcumuladosXIIMes.jsp" class="quick-button-small span1">
                     <i class="icon-folder-close-alt"></i>
                     <p>Acumulados XIII Mes</p>
                 </a>
-                <a href="formAcumuladosXperiodos.html" class="quick-button-small span1">
+                <a href="formAcumuladosXperiodos.jsp" class="quick-button-small span1">
                     <i class="icon-folder-close-alt"></i>
                     <p>Acumulados x Periodos</p>
                 </a>

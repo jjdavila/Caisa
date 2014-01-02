@@ -20,5 +20,8 @@ public class Testpropiedades {
         String llave = propiedades.getValor("url_servicios");
         log.debug("test del archivo de propiedades "+ llave);
         
+        String bd = propiedades.getValor("bd");
+        log.debug("test del nombre de la base de datos: "+ bd);
+        
     }
 }
