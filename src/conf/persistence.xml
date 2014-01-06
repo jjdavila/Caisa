@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="SistemaCaisaPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.caisa.planilla.entity.Formulas</class>
+    <class>com.caisa.planilla.entity.DecimosAcumulados</class>
+    <class>com.caisa.planilla.entity.Usuarios</class>
+    <class>com.caisa.planilla.entity.CalendarioFeriado</class>
+    <class>com.caisa.planilla.entity.Departamentos</class>
+    <class>com.caisa.planilla.entity.Contrato</class>
+    <class>com.caisa.planilla.entity.JornadasTrabajadores</class>
+    <class>com.caisa.planilla.entity.TiposDeSangre</class>
+    <class>com.caisa.planilla.entity.Sexos</class>
+    <class>com.caisa.planilla.entity.IncapacidadesPorEmpleados</class>
+    <class>com.caisa.planilla.entity.SiglasSistema</class>
+    <class>com.caisa.planilla.entity.Paises</class>
+    <class>com.caisa.planilla.entity.DeduccionesPorEmpleado</class>
+    <class>com.caisa.planilla.entity.SistemasError</class>
+    <class>com.caisa.planilla.entity.Turnos</class>
+    <class>com.caisa.planilla.entity.Empresas</class>
+    <class>com.caisa.planilla.entity.Nacionalidades</class>
+    <class>com.caisa.planilla.entity.Fincas</class>
+    <class>com.caisa.planilla.entity.PagosRegulares</class>
+    <class>com.caisa.planilla.entity.Roles</class>
+    <class>com.caisa.planilla.entity.Estados</class>
+    <class>com.caisa.planilla.entity.FeriadosDomingosTrabajados</class>
+    <class>com.caisa.planilla.entity.FormaDePago</class>
+    <class>com.caisa.planilla.entity.Anexo03</class>
+    <class>com.caisa.planilla.entity.Deducciones</class>
+    <class>com.caisa.planilla.entity.Empleados</class>
+    <class>com.caisa.planilla.entity.PagosDeLiquidacion</class>
+    <class>com.caisa.planilla.entity.Cargos</class>
+    <class>com.caisa.planilla.entity.EstadoCivil</class>
+    <class>com.caisa.planilla.entity.DeduccionesOtras</class>
+    <class>com.caisa.planilla.entity.TiposDeCuentaBanco</class>
+    <class>com.caisa.planilla.entity.HorasTrabajadas</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/planilla?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+    </properties>
+  </persistence-unit>
+</persistence>
