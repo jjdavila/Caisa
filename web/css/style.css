@@ -438,9 +438,9 @@ a.brand.noBg {
 .dropdown-menu li > a:hover,
 .dropdown-menu li > a:focus,
 .dropdown-submenu:hover > a {
-  color: #ffffff;
+  color: red;
   text-decoration: none;
-  background: #62bce8;
+  background: red;
 }
 .dropdown-menu .active > a,
 .dropdown-menu .active > a:hover {
@@ -611,8 +611,8 @@ a#main-menu-toggle {
   display: none;
   margin: 0px 0px;
 }
-.nav-tabs.nav-stacked > li > a,
-.nav-tabs.nav-stacked > li > ul > li > a {
+/*menu en down estable */
+.nav-tabs.nav-stacked > li > a{
   padding: 10px 15px;
   color: #fff;
   border: none;
@@ -625,6 +625,14 @@ a#main-menu-toggle {
 }
 .nav-tabs.nav-stacked > li > ul > li > a {
   padding: 10px 20px;
+  color: #000;
+  border: none;
+  background: #58D4F2;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  text-decoration: none;
+  display: block;
 }
 .nav-tabs.nav-stacked > li > a > i,
 .nav-tabs.nav-stacked > li > ul > li > a > i {
@@ -639,9 +647,18 @@ a#main-menu-toggle {
   -moz-border-radius: 0px;
   border-radius: 0px;
 }
-.nav-tabs.nav-stacked > li > a:hover,
+/*estilos del hover del menu en pequeñooñ*/
+.nav-tabs.nav-stacked > li > a:hover {
+  background: #112681;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
 .nav-tabs.nav-stacked > li > ul > li > a:hover {
-  background: #2d323d;
+  background: #E2F0F7;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;

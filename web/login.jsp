@@ -7,7 +7,7 @@
         </title>
         <!-- start: Meta -->
         <meta charset="utf-8">
-       
+       <meta HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
         <meta name="description" content="SimpliQ - Flat & Responsive Bootstrap Admin Template.">
         <meta name="author" content="Lukasz Holeczek">
         <meta name="keyword" content="SimpliQ, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
@@ -20,7 +20,9 @@
         <!-- start: CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="css/style.min.css" rel="stylesheet">
+        <!--<link href="css/style.min.css" rel="stylesheet"> -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/caisa/estilo_caisa.css" rel="stylesheet">
         <link href="css/style-responsive.min.css" rel="stylesheet">
         <link href="css/retina.css" rel="stylesheet">
         <!-- end: CSS -->	

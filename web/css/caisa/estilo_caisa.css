@@ -1,4 +1,15 @@
 .contenidoindex{ 
     background-image:url ('../../img/puerco.jpg');     
-    background-color: red;
+    background-color: red;    
 }
+
+/*Estilos de menu */
+
+.submenu{
+    background: red;
+}
+
+#div_banco, #divActualizar{
+    display: none;
+}
+
