@@ -1,4 +1,7 @@
 			
+<%@page import="java.util.Iterator"%>
+<%@page import="java.util.Map"%>
+<%@page import="java.util.HashMap"%>
 <%@page import="com.caisa.planilla.entity.acciones.mantenimiento_bancos"%>
 <!-- start: Content -->
 
@@ -124,7 +127,11 @@
                     <div class="step-pane active" id="step1">
                         <!--Datos del Empleado-->
                         <form class="form-horizontal" id="isertar">
-
+                            <%
+                                String nombres = null;
+                                String descripciones = null;
+                                String cuentas = null;
+                            %>
 
                             <div class="row-fluid">            
                                 <div class="span6">
@@ -132,32 +139,32 @@
                                     <fieldset> 
                                         <div id="divActualizar">
                                             <div class="control-group">
-                                            <label class="control-label" for="txtnumcuenta">Numero de la Cuenta</label>
-                                            <div class="controls">
-                                                <input type="text" id="txtnumcuenta">                                            
+                                                <label class="control-label" for="txtnumcuenta">Numero de la Cuenta</label>
+                                                <div class="controls">
+                                                    <input type="text" id="txtid">                                            
+                                                </div>
+                                                <div class="form-actions">
+                                                    <button type="submit" id="Buscar" name="Buscar"  value="Buscar" class="btn btn-primary">Buscar</button>
+                                                    <button type="submit" id="enviar" name="enviar"  value="Enviar" class="btn">Enviar</button>
+                                                </div>                                            
                                             </div>
-                                            <div class="form-actions">
-                                                <button type="submit" id="Buscar" name="Buscar"  value="Buscar" class="btn btn-primary">Buscar</button>
-                                                <button type="submit" id="enviar" name="enviar"  value="Enviar" class="btn">Enviar</button>
-                                            </div>                                            
-                                        </div>
                                         </div>
                                         <div class="control-group">
                                             <label class="control-label" for="txtncuenta">Nombre de la Cuenta</label>
                                             <div class="controls">
-                                                <input type="text" id="txtncuenta" name="txtncuenta" required>                                            
+                                                <input type="text" id="txtncuenta" name="txtncuenta"  value="<%=nombres%>">                                            
                                             </div>
                                         </div>
                                         <div class="control-group">
                                             <label class="control-label" for="txtdcuenta">Descripcion de la Cuenta</label>
                                             <div class="controls">
-                                                <input type="text" id="txtdcuenta" name="txtdcuenta" required>                                            
+                                                <input type="text" id="txtdcuenta" name="txtdcuenta" value ="<%=descripciones%>">                                            
                                             </div>
                                         </div>
                                         <div class="control-group">
                                             <label class="control-label" for="txtnumcuenta">Numero de la Cuenta</label>
                                             <div class="controls">
-                                                <input type="text" id="txtnumcuenta" name="txtnumcuenta" required>                                            
+                                                <input type="text" id="txtnumcuenta" name="txtnumcuenta" vaue="<%=cuentas%>" >                                            
                                             </div>
                                         </div>
                                         <div class="form-actions">
@@ -173,39 +180,51 @@
                             </div>
                             <%
 
-                        boolean resultado=true;
-                        
-                        if (request.getParameter("enviar") != null) {
-                            String descripcion = request.getParameter("txtdcuenta").toString().trim();
-                            String nombre = request.getParameter("txtncuenta").toString().trim();
-                            String cuenta = request.getParameter("txtnumcuenta").toString().trim();
-                            mantenimiento_bancos insertar = new mantenimiento_bancos();
-                            resultado = insertar.insertar_cuenta(descripcion, nombre, cuenta);
-                        }
-                        
-                        if (request.getParameter("insert") != null) {
-                            String descripcion = request.getParameter("txtdcuenta").toString().trim();
-                            String nombre = request.getParameter("txtncuenta").toString().trim();
-                            String cuenta = request.getParameter("txtnumcuenta").toString().trim();
-                            mantenimiento_bancos insertar = new mantenimiento_bancos();
-                            resultado = insertar.insertar_cuenta(descripcion, nombre, cuenta);
-                        
-                        if(resultado){
+                                int resultado = 0;
+                                Map<String, String> cuentas_retornadas = new HashMap<String, String>();
+                                if (request.getParameter("Buscar") != null) {
+
+                                    String codigo_cuenta = request.getParameter("txtid").toString();
+
+                                    mantenimiento_bancos buscando = new mantenimiento_bancos();
+                                    cuentas_retornadas = buscando.buscar_cuenta(codigo_cuenta);
+                                    Iterator it = cuentas_retornadas.entrySet().iterator();
+
+                                    while (it.hasNext()) {
+                                        Map.Entry e = (Map.Entry) it.next();
+                                        System.out.println(e.getKey() + " " + e.getValue());
+                                    }
+                                }
+
+                                if (request.getParameter("enviar") != null) {
+                                    String descripcion = request.getParameter("txtdcuenta").toString().trim();
+                                    String nombre = request.getParameter("txtncuenta").toString().trim();
+                                    String cuenta = request.getParameter("txtnumcuenta").toString().trim();
+                                    String id = request.getParameter("txtid");
+                                    mantenimiento_bancos update = new mantenimiento_bancos();
+                                    resultado = update.actualizar_cuenta(id, descripcion, nombre, cuenta);
+                                }
+
+                                if (request.getParameter("insert") != null) {
+                                    String descripcion = request.getParameter("txtdcuenta").toString().trim();
+                                    String nombre = request.getParameter("txtncuenta").toString().trim();
+                                    String cuenta = request.getParameter("txtnumcuenta").toString().trim();
+                                    mantenimiento_bancos insertar = new mantenimiento_bancos();
+                                   boolean resultados = insertar.insertar_cuenta(descripcion, nombre, cuenta);
+
+                                    if (resultados) {
                             %>
-                             <script language="javascript" type="text/javascript">                                                  
-                            alert("Se insertaron los datos correctamente");                           
-                        </script>
-                            <%
-                        }
-                        else {
-                        %>
-                            <script language="javascript" type="text/javascript">                                                  
-                            alert("Ocurrio un problema en la base de datos ");                           
-                        </script>
-                        <%
-                        }
-                        }
-                        %>
+                            <script language="javascript" type="text/javascript">
+                                alert("Se insertaron los datos correctamente");
+                            </script>
+                            <%                            } else {
+                            %>
+                            <script language="javascript" type="text/javascript">
+                                alert("Ocurrio un problema en la base de datos ");
+                            </script>
+                            <%                                }
+                                }
+                            %>
                         </form>
 
                     </div>

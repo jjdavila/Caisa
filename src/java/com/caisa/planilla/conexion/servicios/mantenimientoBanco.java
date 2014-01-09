@@ -4,33 +4,33 @@
  */
 package com.caisa.planilla.conexion.servicios;
 
-
 import com.caisa.planilla.principal.propiedades;
 import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.UniformInterfaceException;
 import com.sun.jersey.api.client.WebResource;
-import com.sun.jersey.api.client.config.ClientConfig;
-import com.sun.jersey.api.client.config.DefaultClientConfig;
 import org.apache.log4j.Logger;
 
-/** 
+/**
+ *
  * @author Miguel Veces
  */
-
-
 public class mantenimientoBanco {
+
     private WebResource webResource;
     private Client client;
-    private final static  String BASE_URI = propiedades.getValor("url_servicios");
+    private final static String BASE_URI = propiedades.getValor("url_servicios");
+    public static Logger log = Logger.getLogger(mantenimientoBanco.class);
 
-    
-     public static Logger log = Logger.getLogger(login.class);         
-    
     public mantenimientoBanco() {
         com.sun.jersey.api.client.config.ClientConfig config = new com.sun.jersey.api.client.config.DefaultClientConfig();
-        //BASE_URI = propiedades.getValor("url_servicios");
         client = Client.create(config);
         webResource = client.resource(BASE_URI).path("tiposdecuentabanco");
+    }
+
+    public String countREST2(String codCuenta) throws UniformInterfaceException {
+        WebResource resource = webResource;
+        resource = resource.path(java.text.MessageFormat.format("count2/{0}", new Object[]{codCuenta}));
+        return resource.accept(javax.ws.rs.core.MediaType.TEXT_PLAIN).get(String.class);
     }
 
     public void remove(String id) throws UniformInterfaceException {
@@ -81,6 +81,12 @@ public class mantenimientoBanco {
         return resource.accept(javax.ws.rs.core.MediaType.APPLICATION_JSON).get(responseType);
     }
 
+    public <T> T find_cuenta(Class<T> responseType, String codCuenta) throws UniformInterfaceException {
+        WebResource resource = webResource;
+        resource = resource.path(java.text.MessageFormat.format("codCuenta/{0}", new Object[]{codCuenta}));
+        return resource.accept(javax.ws.rs.core.MediaType.APPLICATION_JSON).get(responseType);
+    }
+
     public <T> T find_XML(Class<T> responseType, String id) throws UniformInterfaceException {
         WebResource resource = webResource;
         resource = resource.path(java.text.MessageFormat.format("{0}", new Object[]{id}));
@@ -96,5 +102,4 @@ public class mantenimientoBanco {
     public void close() {
         client.destroy();
     }
-    
 }
