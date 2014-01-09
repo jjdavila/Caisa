@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <title>  
-            Sistema de Planilla Caisa
+            Sistema de Planilla Caisa    
         </title>
         <!-- start: Meta -->
         <meta charset="utf-8">
@@ -20,7 +20,7 @@
         <!-- start: CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="css/style.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
         <link href="css/style-responsive.min.css" rel="stylesheet">
         <link href="css/retina.css" rel="stylesheet">
         <!-- end: CSS -->	
