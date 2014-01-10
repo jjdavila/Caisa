@@ -27,7 +27,7 @@
             <li>
                 <a class="dropmenu" href="#"><i class="icon-group"></i><span class="hidden-tablet">Empleado</span> <span class="label">8</span></a>
                 <ul>
-                    <li><a class="submenu" href="#"><i class="icon-hdd"></i><span class="hidden-tablet">Datos Generales</span><span class="label">10</span></a></a></li>
+                    <li><a class="submenu" href="formDatosGeneralesEmpleados.jsp"><i class="icon-hdd"></i><span class="hidden-tablet">Datos Generales</span><span class="label">10</span></a></a></li>
                     <li>
                         <a class="submenu" href="formAcumuladosBasicos.html"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Acumulados</span> <span class="label">8</span></a>
                         <a class="submenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Renta Fija</span> <span class="label">3</span></a>

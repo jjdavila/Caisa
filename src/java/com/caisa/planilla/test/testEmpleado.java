@@ -36,7 +36,7 @@ public class testEmpleado {
 //         
 //       
          
-         log.info(cal);
+     //    log.info(cal);
 //         
          
 
